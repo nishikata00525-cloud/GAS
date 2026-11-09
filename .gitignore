@@ -1,0 +1,42 @@
+# ============================================================
+# UE 5.7 GAS 项目 .gitignore
+# 原则：只版本管理「删了就没了」的东西，忽略「随时可再生」和「第三方大素材」
+# ============================================================
+
+# ---- 引擎可再生的产物（编译 / UHT / 缓存 / 日志） ----
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+.vs/
+*.sln
+*.VC.db
+*.suo
+*.user
+*.opensdf
+*.sdf
+
+# ---- 编辑器与系统临时文件 ----
+.idea/
+*.tmp
+*.bak
+*.log
+.DS_Store
+Thumbs.db
+~$*
+
+# ---- 第三方素材包（约 960 MB，另存网盘 / Release，不进 Git） ----
+# 这些 .uasset 内部写死原工程路径，属于外部资源，不是本项目自写内容
+/Content/TeleportationFX/
+/Content/Effect/
+/Content/ImpactParticlesVol1/
+/Content/ComicSoundEffects/
+/Content/Sucai/
+
+# ============================================================
+# 纳入版本管理的内容：
+#   GAS.uproject、Config/、Source/、.gitignore
+#   Content/ 下的模板资产（ThirdPerson、Characters、Variant_*、
+#     LevelPrototyping、__ExternalActors__、__ExternalObjects__、Input 等）
+#   以及自写内容：_GamePlaySystem/、Widget/、GamePlaySystem/、Floor/
+# ============================================================
