@@ -33,6 +33,11 @@ Thumbs.db
 /Content/ComicSoundEffects/
 /Content/Sucai/
 
+# ---- 11/16 新增第三方角色素材包（合计约 2.2 GB，同样不进 Git） ----
+/Content/GhostSamurai_Bundle/
+/Content/Mage/
+/Content/Samurai_Mega_Anim/
+
 # ============================================================
 # 纳入版本管理的内容：
 #   GAS.uproject、Config/、Source/、.gitignore
